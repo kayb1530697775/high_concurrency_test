@@ -8,7 +8,9 @@ from flask import views, jsonify
 
 
 class BaseView(views.MethodView):
-    pass
+    def generate_data(self, data):
+
+        return jsonify(data)
 
 
 

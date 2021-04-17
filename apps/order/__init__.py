@@ -9,7 +9,7 @@ from flask import Blueprint
 
 order_bp = Blueprint('order', __name__)
 
-from .views.create_order import CreateOrderView
+from .views.order_views import CreateOrderView
 
 
 order_bp.add_url_rule('/order', view_func=CreateOrderView.as_view('/order'))
